@@ -4,7 +4,6 @@ backend/venv/
 backend/*.pyc
 backend/uploads/
 backend/.env
-backend/alembic/versions/
 
 # Frontend
 frontend/node_modules/
