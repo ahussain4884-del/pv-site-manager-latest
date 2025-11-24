@@ -94,8 +94,8 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               margin="normal"
-              autoComplete="current-password"
               required
+              autoComplete="current-password"
             />
             {error && <Alert severity="error" sx={{ mt: 2 }}>{error}</Alert>}
             <Button
