@@ -66,6 +66,7 @@ const Login = () => {
       setError('');
       navigate('/dashboard');
     } catch (err) {
+      console.error('Login error:', err)
       setError(err.response?.data?.detail || 'Login failed');
     }
   };
@@ -93,6 +94,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               margin="normal"
+              autoComplete="current-password"
               required
             />
             {error && <Alert severity="error" sx={{ mt: 2 }}>{error}</Alert>}
