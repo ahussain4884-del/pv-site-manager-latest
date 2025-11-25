@@ -66,7 +66,6 @@ const Login = () => {
       setError('');
       navigate('/dashboard');
     } catch (err) {
-      console.error('Login error:', err)
       setError(err.response?.data?.detail || 'Login failed');
     }
   };
@@ -94,7 +93,6 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               margin="normal"
-              autoComplete="current-password"
               required
               autoComplete="current-password"
             />
@@ -164,7 +162,7 @@ const Dashboard = () => {
         <Toolbar>
           <DashboardIcon sx={{ mr: 2 }} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            PV Site Manager Dashboard
+            PV Site Manager Dashboard Test  # Force change here
           </Typography>
           <Button color="inherit" onClick={Logout}>Logout</Button>
         </Toolbar>
