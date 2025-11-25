@@ -94,6 +94,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               margin="normal"
+              autoComplete="current-password"
               required
               autoComplete="current-password"
             />
