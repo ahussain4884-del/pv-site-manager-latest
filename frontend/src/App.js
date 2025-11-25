@@ -162,7 +162,7 @@
           <Toolbar>
             <DashboardIcon sx={{ mr: 2 }} />
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              PV Site Manager Dashboard - Test Build  # Force change here
+              PV Site Manager Dashboard - Fixed  # Force change here
             </Typography>
             <Button color="inherit" onClick={Logout}>Logout</Button>
           </Toolbar>
